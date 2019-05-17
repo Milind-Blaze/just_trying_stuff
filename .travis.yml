@@ -1,12 +1,18 @@
 install:
-- sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended #Required
-- sudo apt-get install latexmk   #Required for latex make to work.
-#Add more installation lines for all requirements of compiling your code
+- sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+- sudo apt-get install latexmk
+script:
+- make
+- make clean
+env:
+  global:
+    secure: dg2yePmY+NxfAMXSMQFcaukPFt4HONB8ysEkhtDZn8r2WBXHuP6PNcY4Dcgzlyxq+2KBoiZEMBOsT/6W3Zx7V02oUVRVqJPsbD4T654Wbc5yJfR3nUkEA3QBihvvrcXaKsnYjwn+hEthMoqt67tBbmL5yg1rFLRjMZY4JMgnqn1XC+woPAA15rtj3Z9en1fNLKpGDO4EELzfB80UzdbDxWrhcnsUxJfxWQ+s4cX4o+vNsPon6DWwwcjKBma3tuvygaimt93hgSqw61SilscGqUyUnOIiEnHv4xVYXVtus0W+aRGLtdeGLulxEafV9xa6SCQiPfAw2wq2pTdYUxlyVB4KXst2KBYOyPAZwvTiE+l25AM0LZ6ZQBOetXZg2AM5ettdEQ8QaAqtmMKWtlxxgNx+LbVKYKLuvc23CAXM6g+bBBvSiT+/qcvUv8jloPFNMpuvXNdD8s8XBhTmsxnCM0xdszSOeP4BUadfm+Syckk4IKVpyGk0hYkYD9gylrbEEdWjXNYVmdOSRmeiFFFo9YfDWyEH9MUBsht9ioxNTj0jfvNPXoh8WDVjHXXHT/rVlGX1ThRp6subgUgOGde3jE0pwtAug0wSPcYJBZjVeBUJQdyOC/WcBeLv+B6qdlgw7uZ8X1upVKroCNWw6jz57a7vWkQmSUHZo0JU43nUBIk=
 
 
-script: 
-
-- make                      #Use make to call latexmk to compile your pdf
-- make clean                #DO a cleanup of all auxiliary files.
-#You can do other things as well if you like.
-
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  skip_cleanup: true
+  keep_history: true
+  on:
+    branch: master
