@@ -1,7 +1,18 @@
 install:
 - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 - sudo apt-get install latexmk
-
 script:
-  - make
-  - make clean
+- make
+- make clean
+env:
+  global:
+    secure: J2c/Ldd2gVivAzTKCNFd88cw9QFPQxrt3reAz5MZpBpGJdBaHwk+F7H8L4ZnR3mY6rAaCEdxbJmWCdxaOeBCPMQOKarc4NTR8mJS6BNAMEd21UMgGlNRWJZnsmypzqo/UUkf9BG11tcRkjk9EWuC9FfTV+N/SM5t6GMa1jPEJCyVLhTK3XUavv9pMX2dzSPYj0LFnVkhA/qNTryF1wjLi9ciT+fw07nMTuiWxhGmmP09W9cmcpJPRwmN4AxkqyunnhejX2xOq0BOPGLLd09MEOKfB9u4sLTtJfvArQicx5YGn3qzivK44iIVzS5wWvUy8hoG9oPDYLBig9U7eXq4oVgaqUpoOYCLqlTrnxrvMXatBWFDazCgCN/74o1y6meNEWx/5DD6smCMG0DYvYcq0HHkMEdOhoTkL1bA/oWHDmLtP36GLNhytPbJca2u1NCawkDOa/H26PAK7mBek5ebXHE5b0JcpALvLFGfLXDBWE200XKPv502NF861tG8T+zv8YtEjUVW10jbVNWsEfHzgaFR3xMGyV2xhl7aeOoKanifgAY/GJj85K1w87OFVT9LBGjiKEz9DdZiSQRvNS9pe4DWX5uNLVxumVrbUG8dw0CyKERP+oNb2UlqG18BfLIBBMlUggpf/KyuRNERgs3vCDIJwkT3mVK3AhaihRELOXM=
+
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  skip_cleanup: true
+  keep_history: true
+  on:
+    branch: master
