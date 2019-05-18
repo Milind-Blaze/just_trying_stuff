@@ -1,4 +1,7 @@
-install:
+if commit_message != "Deploy Milind-Blaze/just_trying_stuff to github.com/Milind-Blaze/just_trying_stuff.git:gh-pages"
+
+
+nstall:
 - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 - sudo apt-get install latexmk
 script:
@@ -16,3 +19,4 @@ deploy:
   keep_history: true
   on:
     branch: master
+  target_branch: master
