@@ -1,4 +1,4 @@
-if commit_message != "Deploy Milind-Blaze/just_trying_stuff to github.com/Milind-Blaze/just_trying_stuff.git:gh-pages"
+# if commit_message != "Deploy Milind-Blaze/just_trying_stuff to github.com/Milind-Blaze/just_trying_stuff.git:gh-pages"
 
 
 install:
