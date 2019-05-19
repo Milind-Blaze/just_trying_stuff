@@ -31,8 +31,6 @@
 
 \section{Introduction}\label{introduction}
 
-This is a test for travis. This is only the second test I've run. Let's see how far I get with this.
-
 Interferometers at LIGO possess extremely high sensitivity to be able to detect gravitational waves. However, this also makes them highly susceptible to noise and makes keeping the system locked and in observing mode an incredibly challenging task. It is absolutely essential to factor in effects such as those of scattering that decrease the power developed in the devised optical cavity. Scattering can arise from varied sources of noise ranging from tectonic and oceanic movements to nearby electronics that couple into the suspension used to isolate the optics and cause movement along multiple directions. Further, irregularities on the surfaces of the optics too cause scattering and loss of power. Keeping the system in observing mode necessitates that mechansims be designed to detect such miniscule angular motion of the suspended optics and that the system be made robust to these and this is done by employing a number of feedforward and feedback control schemes and over a hundred control loops \cite{adhikari2004sensitivity}.
 
 
@@ -40,7 +38,7 @@ Angular motion of the suspended optics can be detected in either of two ways. Th
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=.8\linewidth]{gige.png}
+\includegraphics[width=.8\linewidth]{figures/gige.png}
 \caption{A schematic of a Fabry Perot cavity}
 \label{fig:gige}
 \end{center}
@@ -52,7 +50,7 @@ A typical control loop employing feedback control is illustrated in Figure \ref{
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=.7\linewidth]{control_loop_bd.pdf}
+\includegraphics[width=.7\linewidth]{figures/control_loop_bd.pdf}
 \caption{A typical feedback control loop}
 \label{fig:control_loop_bd}
 \end{center}
@@ -62,7 +60,7 @@ A simple schematic of the sensing and control tasks is presented in Figure \ref{
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=.7\linewidth]{overall.pdf}
+\includegraphics[width=.7\linewidth]{figures/overall.pdf}
 \caption{Sensing and control of angular motion}
 \label{fig:overall}
 \end{center}
@@ -114,7 +112,7 @@ Most feedback techniques employed thus far rely on linear control to achieve the
 
     \begin{figure}[htbp]
     \begin{center}
-    \includegraphics[width =.7\linewidth]{oplev_schematic.pdf}
+    \includegraphics[width =.7\linewidth]{figures/oplev_schematic.pdf}
     \caption{Design of an optical lever}
     \label{fig:oplev_schematic}
     \end{center}
@@ -134,13 +132,13 @@ Most feedback techniques employed thus far rely on linear control to achieve the
       \centering
         \begin{subfigure}[b]{0.4\textwidth}
           \centering
-          \includegraphics[width=\linewidth]{2theta.pdf}
+          \includegraphics[width=\linewidth]{figures/2theta.pdf}
           \caption{}
           \label{fig:2theta}
         \end{subfigure}%
         \begin{subfigure}[b]{0.4\textwidth}
           \centering
-          \includegraphics[width=0.5\linewidth]{qpd.pdf}
+          \includegraphics[width=0.5\linewidth]{figures/qpd.pdf}
           \caption{}
           \label{fig:qpd}
         \end{subfigure}
@@ -163,7 +161,7 @@ Most feedback techniques employed thus far rely on linear control to achieve the
 
     \begin{figure}[htbp]
     \begin{center}
-    \includegraphics[width =.7\linewidth]{train.pdf}
+    \includegraphics[width =.7\linewidth]{figures/train.pdf}
     \caption{Training a neural network to determine angular motion}
     \label{fig:train}
     \end{center}
@@ -175,7 +173,7 @@ Most feedback techniques employed thus far rely on linear control to achieve the
 
     \begin{figure}[htbp]
     \begin{center}
-    \includegraphics[width =.7\linewidth]{test.pdf}
+    \includegraphics[width =.7\linewidth]{figures/test.pdf}
     \caption{Neural network at test time}
     \label{fig:test}
     \end{center}
