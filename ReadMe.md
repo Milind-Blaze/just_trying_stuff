@@ -6,3 +6,6 @@ LIGO_proposal_v2.tex: Source file for draft version 2. Still under works. Need t
 
 
 [![Build Status](https://travis-ci.com/Milind-Blaze/just_trying_stuff.svg?branch=master)](https://travis-ci.com/Milind-Blaze/just_trying_stuff)
+
+
+https://github.com/Milind-Blaze/just_trying_stuff/blob/gh-pages/LIGO_proposal.pdf
